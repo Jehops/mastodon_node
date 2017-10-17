@@ -2,14 +2,9 @@
   "name": "mastodon",
   "license": "AGPL-3.0",
   "scripts": {
-    "postversion": "git push --tags",
-    "build:development": "cross-env RAILS_ENV=development ./bin/webpack",
     "build:production": "cross-env RAILS_ENV=production ./bin/webpack",
     "manage:translations": "node ./config/webpack/translationRunner.js",
-    "start": "node ./streaming/index.js",
-    "test": "yarn run test:lint && yarn run test:mocha",
-    "test:lint": "eslint -c .eslintrc.yml --ext=js app/javascript/ config/webpack/ spec/javascript/ streaming/",
-    "test:mocha": "cross-env NODE_ENV=test mocha --require ./spec/javascript/setup.js --compilers js:babel-register ./spec/javascript/components/**/*.test.js"
+    "start": "node ./streaming/index.js"
   },
   "repository": {
     "type": "git",
@@ -56,6 +51,7 @@
     "immutable": "^3.8.1",
     "intersection-observer": "^0.4.0",
     "intl": "^1.2.5",
+    "intl-messageformat": "^2.1.0",
     "intl-relativeformat": "^2.0.0",
     "is-nan": "^1.2.1",
     "js-yaml": "^3.9.0",
