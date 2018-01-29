@@ -3441,7 +3441,7 @@ node-fetch@^1.0.1:
 
 node-gyp@^3.3.1:
   version "3.6.2"
-  resolved "https://registry.yarnpkg.com/node-gyp/-/node-gyp-3.6.2.tgz#9bfbe54562286284838e750eac05295853fa1c60"
+  resolved "https://registry.yarnpkg.com/node-gyp/-/node-gyp-3.6.2.tgz#04669fb2b0ce0dd24d769015dc78a07f2895e6b3"
   dependencies:
     fstream "^1.0.0"
     glob "^7.0.3"
